@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>UART Driver</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+            <header id="header">
+                <h1 id="logo"><a href="index.html">Welcome!</a></h1>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li>
+                            <a href="#">Projects</a>
+                            <ul>
+                                <li><a href="left-sidebar.html">Viginere Cipher Key Decription</a></li>
+                                <li><a href="right-sidebar.html">RISC-V Processor</a></li>
+                                <li>
+                                    <a href="#">Embedded Software Drivers</a>
+                                    <ul>
+                                        <li><a href="i2c.html">I2C</a></li>
+                                        <li><a href ="Uart.html"> UART</a></li>
+                                        <li><a href="SPI.html">SPI</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="Resume/Williams_Terence_Resume.pdf">Resume</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+			<!-- Main -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>UART Driver</h2>
+						</header>
+						<div class="row gtr-150">
+							<div class="col-4 col-12-medium">
+
+							</div>
+							<div class="col-8 col-12-medium imp-medium">
+
+								<!-- Vigenere -->
+									<section id="content">
+										<h1>Project Description</h1>
+										<p>
+                                            The LEUART0 will be connected to a BLE, Bluetooth Low Energy, NCP, Network Co-Processor. A Network 
+                                            Co-Processor is a very simple way of communicating via a radio. The NCP handles the software communication 
+                                            stack and the application on the Mighty Gecko just transmits the data to the NCP for transmission or receipt
+                                             of data from it. Every time that the Si1133 takes a light measurement, it will send data to the BLE module to transmit
+                                              the light value to your phone. When the light count is less than 20, the application will turn on RGB LED 1 
+                                              blue and turn-off RGB LED 1 if the light count is equal to or greater than 20. Low-Energy software methodology will always 
+                                              be used to keep the micro-controller at the lowest possible energy mode.
+										</p>
+										<a href="#" class="image fit"><img src="images/TBS2.jpg" alt="" /></a>
+										<a href="#" class="image smaller"><img src="images/ble.jpeg" alt="" /></a>
+										<!-- Write -->
+										<h1>Software Diagrams</h1>
+										<li><a href="Driver_FlowCharts/LEUART_FLOWCHART_WILLIAMS.pdf">Link To UART Diagram</a></li>
+										<h1>Doxygen</h1>
+										<li><a href="html_UART/index.html">Doxygen Report</a></li>
+										<h1>GitHub</h1>
+										<p>Check out the code by clicking on the GitHub icon below! The file is a .sls and will need to be imported as a project in the Simplicty IDE.</p>
+										<ul class="icons">
+											<li><a href="https://github.com/Terence646/Portfolio/blob/main/TW_UART_Lab.sls" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+										</ul> 							
+									</section>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<!-- <ul class="icons">
+					<li><a href="https://www.google.com/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+					<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+				</ul> -->
+				<ul class="copyright">
+					<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

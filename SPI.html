@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>SPI Driver</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<header id="header">
+				<h1 id="logo"><a href="index.html">Welcome!</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li>
+							<a href="#">Projects</a>
+							<ul>
+								<li><a href="left-sidebar.html">Viginere Cipher Key Decription</a></li>
+								<li><a href="right-sidebar.html">RISC-V Processor</a></li>
+								<li>
+									<a href="#">Embedded Software Drivers</a>
+									<ul>
+										<li><a href="i2c.html">I2C</a></li>
+										<li><a href ="Uart.html"> UART</a></li>
+										<li><a href="SPI.html">SPI</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><a href="Resume/Williams_Terence_Resume.pdf">Resume</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- Main -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>SPI Driver</h2>
+						</header>
+						<div class="row gtr-150">
+							<div class="col-4 col-12-medium">
+
+							</div>
+							<div class="col-8 col-12-medium imp-medium">
+
+								<!-- Vigenere -->
+									<section id="content">
+										<h1>Project Description</h1>
+										<p>This project was the most complex of the embedded software drivers that I have developed. Not only was the driver itself challenging, so was the application. 
+											In this project I was able to create
+											a SPI driver and a device layer for the onboard Thunderboard Sense 2 accelerometer (ICM 20648).
+											The driver uses the USART peripheral of the Mighty Gecko (Thunderboard Sense SOC). The application will request the value of the Z-direction of the accelerometer once 
+											every LETIMER0 period (2 seconds). This is used in order to determine if the board is pointing upward or downward. Upon the first read of facing downward, the RGB LED2 
+											will turn GREEN and send a message via the HM-18 (UART bluetooth module) to your phone that the board is pointing downward. Then, upon the board being turned to the upward direction, a single notice will
+											be sent that the board is now pointing up and the RGB LED 2 will turn off.
+										</p>
+										<a href="#" class="image fit"><img src="images/TBS2.jpg" alt="" /></a>
+										<h1>Board Pinout</h1>
+										<a href="#" class="image fit"><img src="images/PinOut.png" alt="" /></a>
+										<h1>Hardware Configuration</h1>
+										<p>First, the HM-18 bluetooth module needs to be connected properly. Next, module needs to be powered via the 5V ouptut and have a ground connection to the Thunderboard. Then, the
+											UART TX and RX pins need to be connected respectivly. In additon, a bluetooth terminal is needed in order to recieve transmissions via cellphone. For this project
+											I used BLE Terminal, but any bluetooth compatible application should work.
+										</p>
+						
+										<h1>Software Diagram</h1>
+										<li><a href="Driver_FlowCharts/SPI_Flowchart.pdf">Link To SPI Diagram</a></li>
+
+										<h1>Doxygen</h1>
+										<li><a href="html_SPI/index.html">Doxygen Report</a></li>
+
+										<h1>GitHub</h1>
+										<p>Check out the code by clicking on the GitHub icon below! The file is a .sls and will need to be imported as a project in the Simplicty IDE.
+										</p>
+
+										<ul class="icons">
+											<li><a href="https://github.com/Terence646/Portfolio/blob/main/TW_SPI_Project.sls" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+										</ul> 	
+									</section>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<!-- <ul class="icons">
+					<li><a href="https://www.google.com/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+					<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+				</ul> -->
+				<ul class="copyright">
+					<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

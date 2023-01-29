@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Vigenere Cipher Decription </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<header id="header">
+				<h1 id="logo"><a href="index.html">Welcome!</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li>
+							<a href="#">Projects</a>
+							<ul>
+								<li><a href="left-sidebar.html">Viginere Cipher Key Decription</a></li>
+								<li><a href="right-sidebar.html">RISC-V Processor</a></li>
+								<li>
+									<a href="#">Embedded Software Drivers</a>
+									<ul>
+										<li><a href="i2c.html">I2C</a></li>
+										<li><a href ="Uart.html"> UART</a></li>
+										<li><a href="SPI.html">SPI</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><a href="Resume/Williams_Terence_Resume.pdf">Resume</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- Main -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>Vigenere Cipher Decription</h2>
+						</header>
+						<div class="row gtr-150">
+							<div class="col-4 col-12-medium">
+
+							</div>
+							<div class="col-8 col-12-medium imp-medium">
+
+								<!-- Vigenere -->
+									<section id="content">
+										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
+										<h3>What is a Viginere Cipher?</h3>
+										<!-- Description -->
+										<p> Vigenere Cipher is a method of encrypting alphabetic text. It uses a simple form of polyalphabetic substitution. A polyalphabetic cipher is any cipher based on substitution, using multiple substitution alphabets. The encryption of the original text is done using the Vigenère square or Vigenère table.</p>
+										<p> In more simple terms, a viginere cipher is a numeric shift based on the specified "key". With the letter "A" representing 0 and the letter "Z" representing 25. The key is duplicated so it's length matches the length of the plain text. Then each letter of the plain text is shifted by the corresponding numeric value of the indexed key letter.</p>
+										<p>For example, if the Plain Text is "Attack at Dawn" and the key was "safe", the extended key would be "safesafesafe". This would give an ouput cipher text of "styeuk fx vabr"</p>
+										<h3>How to Decipher?</h3>
+										<p> In order to figure out the key of a vigenere cipher, we need to take advantage of something known as "letter frequency analysis". Without going into too much detail, this utilizes the fact that in any given stretch of written language, certain letters and combinations of letters occur with varying frequencies. By comparing known letter frequencies to those in the cipher text, we can work backwards in order to figure out the key.</p>
+										<h3>Decription</h3>
+										<p> What I have created is a python program that takes in the input Cipher Text via standard input and will then print the key of that text.</p>
+										<p>Go ahead and try for yourself! You can download the code from my github by clicking the icon below. Since the algorithm utilizes letter frequency analysis, the input cipher text needs to be quite long. I would recomend anything between 1000 and 10000 letters.</p>
+										<ul class="icons">
+											<li><a href="https://github.com/Terence646/Portfolio/blob/main/Vigenere.py" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+										</ul> 							
+									</section>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<!-- <ul class="icons">
+					<li><a href="https://www.google.com/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+					<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+				</ul> -->
+				<ul class="copyright">
+					<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
