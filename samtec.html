@@ -3,10 +3,12 @@
 	Landed by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Edited By: Terence Williams
+	Last: 03/08/23
 -->
 <html>
 	<head>
-		<title>SPI Driver</title>
+		<title>I2C Driver</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -24,8 +26,8 @@
 						<li>
 							<a href="#">Projects</a>
 							<ul>
-								<li><a href="DE-10/Soft_Core_for_DE_10_Lite.pdf">Soft Core for DE-10 Lite</a></li>
-								<li><a href="samtec.html">Senior Design</a></li>
+                                <li><a href="DE-10/Soft_Core_for_DE_10_Lite.pdf">Soft Core for DE-10 Lite</a></li>
+                                <li><a href="samtec.html">Senior Design</a></li>
 								<li><a href="left-sidebar.html">Viginere Cipher Key Decription</a></li>
 								<li><a href="right-sidebar.html">RISC-V Processor</a></li>
 								<li>
@@ -42,12 +44,11 @@
 					</ul>
 				</nav>
 			</header>
-
 			<!-- Main -->
 				<div id="main" class="wrapper style1">
 					<div class="container">
 						<header class="major">
-							<h2>SPI Driver</h2>
+							<h2>HCI for ATE</h2>
 						</header>
 						<div class="row gtr-150">
 							<div class="col-4 col-12-medium">
@@ -58,36 +59,15 @@
 								<!-- Vigenere -->
 									<section id="content">
 										<h1>Project Description</h1>
-										<p>This project was the most complex of the embedded software drivers that I have developed. Not only was the driver itself challenging, so was the application. 
-											In this project I was able to create
-											a SPI driver and a device layer for the onboard Thunderboard Sense 2 accelerometer (ICM 20648).
-											The driver uses the USART peripheral of the Mighty Gecko (Thunderboard Sense SOC). The application will request the value of the Z-direction of the accelerometer once 
-											every LETIMER0 period (2 seconds). This is used in order to determine if the board is pointing upward or downward. Upon the first read of facing downward, the RGB LED2 
-											will turn GREEN and send a message via the HM-18 (UART bluetooth module) to your phone that the board is pointing downward. Then, upon the board being turned to the upward direction, a single notice will
-											be sent that the board is now pointing up and the RGB LED 2 will turn off.
+										<p> ECEN Capstone Team CocoControl was sponsored by Samtec on the Hardware Control Interface (HCI) to Automated Test Equipment (ATE) proposal. 
+                                            This automated, high-speed test equipment is used to conduct a bit-error-rate test on the FireflyTM, a fiber optics cable. 
+                                            Samtec’s engineers lack the ability to change the attenuation in an efficient fashion for less routine testing. 
+                                            The HCI test equipment addressed this issue providing manual controls for adjusting attenuation, including a touchscreen to 
+                                            display each of the 12 testing channels and multi-channel data transmission between the PC and number pad inputs for simultaneous control. 
+                                            Having real-time control over testing equipment without the need for a PC was able to save Samtec’s engineers time, energy, and money.
 										</p>
-										<a href="#" class="image fit"><img src="./images/TBS2.jpg" alt="" /></a>
-										<h1>Board Pinout</h1>
-										<a href="#" class="image fit"><img src="./images/PinOut.png" alt="" /></a>
-										<h1>Hardware Configuration</h1>
-										<p>First, the HM-18 bluetooth module needs to be connected properly. Next, module needs to be powered via the 5V ouptut and have a ground connection to the Thunderboard. Then, the
-											UART TX and RX pins need to be connected respectivly. In additon, a bluetooth terminal is needed in order to recieve transmissions via cellphone. For this project
-											I used BLE Terminal, but any bluetooth compatible application should work.
-										</p>
-						
-										<h1>Software Diagram</h1>
-										<li><a href="Driver_FlowCharts/SPI_Flowchart.pdf">Link To SPI Diagram</a></li>
-
-										<h1>Doxygen</h1>
-										<li><a href="html_SPI/index.html">Doxygen Report</a></li>
-
-										<h1>GitHub</h1>
-										<p>Check out the code by clicking on the GitHub icon below! The file is a .sls and will need to be imported as a project in the Simplicty IDE.
-										</p>
-
-										<ul class="icons">
-											<li><a href="https://github.com/Terence646/Portfolio/blob/main/TW_SPI_Project.sls" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-										</ul> 	
+										<a href="#" class="image fit"><img src="/Samtec/expo-team.jpeg" alt="" /></a>
+										<!-- Write -->						
 									</section>
 
 							</div>
